@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Montserrat&family=Mulish:wght@500&family=Source+Serif+Pro&display=swap');
+
+/*font-family: 'Epilogue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Source Serif Pro', serif;*/
+
+
+
+.currency_heading
+{
+  font-family: 'Source Serif Pro', sans-serif;
+}
+
+.hero
+{
+  /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+  background: url('https://images.unsplash.com/photo-1500316124030-4cffa46f10f0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1dbac5fe7023b4a7eb4457ab2f4f904e')
+              no-repeat center center fixed;
+  background-color: #9D5C0D;
+}

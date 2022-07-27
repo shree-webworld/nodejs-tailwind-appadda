@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Lusitana&family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+
+#todo_section
+{
+  background-image: url("https://assets.codepen.io/780593/hobbit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* font-family: 'Eagle Lake', cursive; */
+  /* font-family: 'Bai-Jamjuree'; */
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: rgba(73, 70, 47, 1);
+}
+
+#todo_container
+{
+  /* position: relative; */
+  /* margin: auto; */
+  /* margin-top: 30px; */
+  /* height: 900px; */
+  /* width: auto; */
+}
+
+#taskApp
+{
+  background:#61754E;
+  border-radius:20px;
+  border:5px solid #61754E;
+  border-bottom:1px;
+  color: #B99F56;
+}
+
+#new_task
+ {
+  border-radius: 20px;
+  border: 1px solid #61754E;
+  background-color: #48472F;
+}
+
+#add
+{
+  background-color: #B1966E;
+}
+#add:hover{
+  background: #296190;
+  border-color: #FFF07C;
+}
+
+#delete_btn_id:hover
+{
+  background-color: #ABAC57;
+  /* #9B0000; */
+  /* #ABAC57; */
+  border-color: #FFF07C;
+  color: #FEFEFF;
+
+}
+
+input:checked + p
+{
+  text-decoration-line:  line-through;
+  text-decoration-style : wavy ;
+  text-decoration-color: #9B0000;
+
+}
+
+#table_box
+{
+  overflow-y: scroll;
+}
+
+th
+{
+  position: sticky;
+  top: 0;
+}

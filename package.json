@@ -1,0 +1,26 @@
+{
+  "name": "expr_day_today_apps2",
+  "version": "1.0.0",
+  "description": "Day to day apps creation using EJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind" : "tailwindcss build -i src/tailwind.css -o public/css/tailwind.css"
+  },
+  "author": "Shreedhar",
+  "license": "ISC",
+  "engines": {
+    "node": "16.13.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17"
+  }
+}

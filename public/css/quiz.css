@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+#quiz_page
+{
+  /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+  /* background-image: url("https://4.bp.blogspot.com/-LQV4NPu9kd4/UPItmruV0tI/AAAAAAAAUec/JyAylV7pnJ0/s1600/san+diego+-+sunset+-+sunset+sunday.JPG"); */
+  background-color: #fc4a1a - #f7b733;
+  /* center */
+  /* width: 100%;
+  min-height: 89vh;
+  display: grid;
+  place-items :center;
+  position: relative; */
+}
+.row
+{
+  margin: 0;
+}
+
+#quiz_box
+{
+    background-color: white;
+    width: 40vw;
+    /* min-height: 40vh; */
+    /* margin: 100px 25px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+}
+
+#score_box
+{
+    display: none;
+    background-color: white;
+    width: 40vw;
+    min-height: 50vh;
+    /* margin: 100px 25px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+}
+
+#showscore
+{
+  background-color: green;
+  width: 30vw;
+  height: 20vh;
+  margin: 120px 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#options input
+{
+    cursor: pointer;
+}
+
+#label_id2 p .h3
+{
+  padding-left: 20px;
+}
+
+/* <!-- HTML !--> */
+/* <button class="button-63" role="button">Button 63</button> */
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  /* center */
+  display : block;
+  margin: auto;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color : blue;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+.quiz_box header .timer{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.quiz_box header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.quiz_box header .time_line{
+    position: absolute;
+    /* bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff; */
+}
+
+.winner
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}

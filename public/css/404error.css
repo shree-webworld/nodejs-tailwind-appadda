@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
+.textfont
+{
+  font-family: 'Bebas Neue', cursive;
+}
+
+#buttonfont
+{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.error_image
+{
+  width: 600px;
+  max-width: 100%;
+}
+
+.text-9xl{
+font-size: 14rem;
+}
+@media(max-width: 645px){
+.text-9xl{
+font-size: 5.75rem;
+}
+.text-6xl{
+font-size: 1.75rem;
+}
+.text-2xl {
+font-size: 1rem;
+line-height: 1.2rem;
+}
+.py-8 {
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.px-6 {
+padding-left: 1.2rem;
+padding-right: 1.2rem;
+}
+.mr-6{
+margin-right: 0.5rem;
+}
+.px-12 {
+padding-left: 1rem;
+padding-right: 1rem;
+}
+}

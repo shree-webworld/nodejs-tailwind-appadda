@@ -1,0 +1,61 @@
+
+<%- include('header_links') -%>
+<meta name="keywords" content="Weather, temprature, app,local city">
+<meta name="description" content="Check the realtime temprature and weather condition of your local city.">
+<link rel="stylesheet" href="css/weather.css">
+
+<title>🌡️ Weather App 🌩️</title>
+</head>
+  <body>
+    <%- include('preloader'); -%>
+    <%- include('navbar2'); -%>
+
+    <div class="h-96 min-h-screen weather_frame">
+       <section class="bg-coolGray-100 text-coolGray-800 " >
+         <div class="container mx-auto flex flex-col items-center px-4 py-16 text-center
+                     md:py-32 md:px-10 lg:px-32 xl:max-w-3xl" >
+           <div class="form-control md:my-4 mt-12" >
+             <div class="relative">
+               <input placeholder="Enter City" id="cityname"
+                      class="w-full text-4xl pr-16 py-8 input input-primary input-bordered text-black
+                             rounded-full  capitalize"
+                      type="text">
+               <button type="submit" name="button" id="submitButton"
+                       class="absolute top-0 right-0 rounded-l-none btn btn-lg btn-primary rounded-full  capitalize">
+                 <i class="bi bi-search text-2xl my-3"></i>
+               </button>
+             </div>
+           </div>
+
+
+           <div class="flex flex-wrap justify-center h-auto max-h-screen w-96 max-w-full data_hide mt-8" id="temp">
+             <div class="flex flex-col items-center p-8 rounded-md w-60 sm:px-12 bg-coolGray-50 text-coolGray-800">
+               <div class="text-center">
+                 <h2 class="text-2xl font-semibold" id="city_name"></h2>
+                 <p class="text-sm text-coolGray-600 dates"></p>
+               </div>
+               <div class="my-8 text-4xl font-semibold " >
+                 <p id = "temp_status" class=" "></p>
+               </div>
+
+               <div class="text-3xl font-semibold " >
+                   <span class="mx-1 font-normal deg_cel"></span>°C
+               </div>
+               <p class="text-coolGray-600 description capitalize"></p>
+             </div>
+
+           </div>
+         </div>
+       </section>
+      </div>
+
+    <%- include('footer'); -%>
+    <%- include('script_links'); -%>
+    <script src="js/preloader.js" charset="utf-8"></script>
+    <script src="js/weather.js" charset="utf-8"></script>
+
+  </body>
+  </html>
+
+
+<!-- style="background-image: url('https://crystalseye.files.wordpress.com/2011/08/dsc_0724.jpg'); -->

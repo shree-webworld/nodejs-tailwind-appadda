@@ -1,0 +1,42 @@
+
+<%- include('header_links') -%>
+  <link rel="stylesheet" type="text/css" href="css/404error.css">
+  <title>404 Error</title>
+
+</head>
+<body>
+  <%- include('preloader'); -%>
+  <%- include('navbar2') -%>
+
+  <div class="bg-gradient-to-r from-purple-300 to-blue-200 ">
+  <div class="w-9/12 m-auto py-16  min-h-screen flex items-center justify-center ">
+  <div class="bg-white shadow overflow-hidden sm:rounded-lg pb-4">
+  <div class="border-t border-gray-200 text-center pt-8">
+  <!-- <h1 class="text-9xl font-bold text-purple-400">404</h1> -->
+  <div class="flex justify-center cssanimation hu__hu__ ">
+    <figure>
+    <img src="images/404error/404 Page Not Found _Monochromatic.svg" alt="404error Page Not Found "
+         class=" w-96 rounded-lg shadow-2xl ">
+    </figure>
+  </div>
+  <h1 class="text-4xl font-medium py-8">
+    😮<span class="text-blue-400 textfont">oops! Page not found</span>
+  </h1>
+  <p class="text-2xl pb-8 px-12 font-medium text-gray-600 textfont">
+    Oops! The page you are looking for does not exist. It might have been moved or deleted.
+  </p>
+
+  <button role="button" aria-pressed="true" class="btn btn-primary btn-outline">
+      <a href="/" id="buttonfont" class="text-xl font-bold">Back To <span class="text-pink-800"> 🏠</span> Page</a>
+  </button>
+  </div>
+  </div>
+  </div>
+  </div>
+
+ <%- include('footer'); -%>
+  <%- include('script_links'); -%>
+  <script src="js/preloader.js" charset="utf-8"></script>
+  <script src="js/404error.js"></script>
+</body>
+</html>

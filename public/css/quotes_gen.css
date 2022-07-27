@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&display=swap');
+
+#quotes_bg
+{
+    background-image:url('https://66.media.tumblr.com/bfb0fc23b1e7dacf2154a3430db1d119/tumblr_oaeviyDRt81vx7c7mo1_1280.jpg');
+    background-color: #9D5C0D;
+
+}
+
+#quoteblock
+{
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  /* font-family: 'Lusitana', serif; */
+/* font-family: 'Raleway', sans-serif; */
+}

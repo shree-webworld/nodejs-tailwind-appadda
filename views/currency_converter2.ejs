@@ -1,0 +1,51 @@
+
+<%- include('header_links') -%>
+<meta name="keywords" content="Currency, Exchange rates, app">
+<meta name="description" content="Free currency calculator app to convert between most of the global currencies using live exchange rates.">
+<link rel="stylesheet" href="css/currency_converter.css">
+
+<title>💲 Currency Converter App 💵</title>
+</head>
+    <body>
+      <%- include('preloader'); -%>
+      <%- include('navbar2'); -%>
+
+      <div class=" hero min-h-screen ">
+        <div class="text-center hero-content">
+          <div class="max-w-full currency_heading">
+            <div class="">
+              <h1 class="text-6xl font-bold"></h1>
+            </div>
+
+            <div class="mb-12 details text-white ">
+              <p class="text-3xl font-extralight">¥ Currency €</p>
+              <h1 class="text-6xl font-bold">$ Converter ₹</h1>
+            </div>
+              <!-- <div class="flex items-center justify-center"> -->
+            <div class="grid grid-cols-2 gap-x-6 gap-y-4 ml-4 mr-4 md:ml-0 md:mr-0">
+                <input type="text" id="num" class="bg-gray-300 input input-primary input-bordered text-xl font-semibold  md:w-96">
+
+                <select class="bg-gray-200 select select-bordered select-info w-full max-w-xs text-xl font-semibold currency">
+                  <option disabled="disabled" selected="selected">Currency</option>
+                </select>
+
+                <input type="text"  disabled="disabled" id="ans"
+                class=" input input-primary input-bordered text-xl font-semibold md:96">
+
+                <select class="bg-gray-200 select select-bordered select-info w-full max-w-xs text-xl font-semibold currency">
+                  <option disabled="disabled" selected="selected">Converter </option>
+                </select>
+            </div>
+              <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+      <%- include('footer'); -%>
+      <%- include('script_links'); -%>
+      <script src="js/preloader.js" charset="utf-8"></script>
+      <script src="js/currency_converter.js" charset="utf-8"></script>
+    </body>
+</html>

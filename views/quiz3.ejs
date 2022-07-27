@@ -1,0 +1,83 @@
+
+<%- include('header_links') -%>
+<meta name="keywords" content="quiz, app, html quiz">
+<meta name="description" content="This quiz app is based on basic html. Try it!">
+<link rel="stylesheet" type="text/css" href="css/quiz3.css">
+<title>Quiz❓ App</title>
+</head>
+  <body>
+    <%- include('preloader'); -%>
+    <%- include('navbar2'); -%>
+    <div id="container" >
+        <!--    Start Section     -->
+        <div id="start">Start Quiz</div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>Quiz Guide</h2>
+            <h4>1. You Have Only 15 Seconds For Each Questions.</h4>
+            <h4>2. Once You Select Your Answer.It Can't Be Undone.</h4>
+            <h4>3. You'll Get Points On The Basic Of Your Correct Answers.</h4>
+            <h4>4. You Can't Exit From The Quiz While You Are Playing.</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+                <h5>Amazing Quiz App</h5>
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="total_correct">3 Of 10 Questions</h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <!-- <i class="fas fa-trophy"></i> -->
+            <i class="bi bi-trophy-fill"></i>
+            <h6>You Are Completed The Quiz</h6>
+            <h6 id="points">You Got 4 Out Of 10</h6>
+            <button id="quit">Quit Quiz</button>
+            <button id="startAgain">Start Again</button>
+        </div>
+    </div>
+
+    <%- include('footer');-%>
+    <%- include('script_links'); -%>
+    <script src="js/preloader.js" charset="utf-8"></script>
+    <script src="js/quiz_questions.js" charset="utf-8"></script>
+    <script src="js/quiz_script.js" charset="utf-8"></script>
+  </body>
+</html>
+
+
+
+
+<!-- https://www.youtube.com/watch?v=3fbU4z7fPe4 -->

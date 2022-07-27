@@ -1,0 +1,53 @@
+<%- include('header_links') -%>
+<meta name="keywords" content="Typing, Speed Test ,Game, app">
+<meta name="description" content="Test your typing speed and accuracy using our free typing test.">
+<link rel="stylesheet" href="css/typing_speed_test.css">
+
+<title> ⌨️ Typing Speed Test Game </title>
+</head>
+    <body>
+      <%- include('preloader'); -%>
+      <%- include('navbar2'); -%>
+
+      <div class="hero min-h-screen" style="background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80 )">
+        <input class="input input-bordered z-50 opacity-0 absolute" type="text">
+        <div class="text-center hero-content bg-gray-100 rounded-xl p-8 flex flex-col space-y-4" id="content_box">
+          <div class="text-2xl font-black text-purple-900">
+            Typing Speed Test Game
+          </div>
+
+          <div class="max-w-md border border-black rounded-xl text-xl text-justify tracking-normal break-all
+                      overflow-y-auto max-h-60" id="typing_text">
+            <p class="p-4 text-xl font-normal"> </p>
+           </div>
+            <div id="content" >
+                      <ul id="result-details" class="flex flex-row space-x-16">
+                        <li id="time">
+                          <p>Time Left:</p>
+                          <span><b>60</b>sec</span>
+                        </li>
+                        <li id="mistake">
+                          <p>Mistakes:</p>
+                          <span>0</span>
+                        </li>
+                        <li id="wpm">
+                          <p>WPM:</p>
+                          <span>0</span>
+                        </li>
+                        <li id="cpm">
+                          <p>CPM:</p>
+                          <span>0</span>
+                        </li>
+                      </ul>
+                  <button class="btn btn-primary mt-4 text-xl">Try Again</button>
+              </div>
+          </div>
+        </div>
+
+      <%- include('footer'); -%>
+      <%- include('script_links'); -%>
+      <script src="js/preloader.js" charset="utf-8"></script>
+      <script src="js/typing_speed_test_paragraph.js" charset="utf-8"></script>
+      <script src="js/typing_speed_test_script.js" charset="utf-8"></script>
+    </body>
+</html>

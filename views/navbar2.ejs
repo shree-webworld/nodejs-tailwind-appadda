@@ -1,0 +1,94 @@
+
+  <%- include('header_links') -%>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/navbar2.css">
+
+</head>
+  <body x-data="{ navbaropen: false }">
+    <header class = "fixed w-full flex justify-between items-center
+                     px-4 md:px-12 h-20 bg-purple-600 ">
+
+        <a href="/" class="text-4xl text-white font-bold">
+          <i class="bi bi-app-indicator"></i>
+          AppAda
+        </a>
+
+      <nav >
+        <button class= "font-bold text-white text-2xl h-12 w-12  md:hidden"
+                         @click = "navbaropen = !navbaropen" type="button">
+            <i :class=" !navbaropen ?
+                        'ri-menu-fold-line text-white text-4xl' : 'ri-menu-unfold-line text-white text-4xl' ">
+            </i>
+        </button>
+
+        <ul  class="fixed left-0 right-0 min-h-screen
+                  bg-purple-900 bg-opacity-100 space-y-4 p-4 text-xl transform translate-x-full transition duration-300
+                  md:relative md:flex md:min-h-0 md:space-y-0 md:space-x-14 md:p-0 md:translate-x-0 md:bg-purple-600"
+                  :class = " {'translate-x-full' : !navbaropen,  'translate-x-0' : navbaropen} ">
+
+        <nav>
+          <li class="cursor-pointer hover:underline ">
+            <a class="text-white " aria-current="page" href="/">Home</a>
+          </li>
+        </nav>
+        <nav>
+          <!-- <li class="">
+            <a class="text-white " aria-current="page" href="">
+              Apps
+            </a>
+          </li> -->
+          <div class=" dropdown dropdown-hover " >
+            <div tabindex="0" class="cursor-pointer text-white hover:underline">
+              Apps <i class="ri-arrow-down-s-fill animate-pulse "></i>
+            </div>
+            <ul tabindex="0" class="p-2 shadow menu dropdown-content  dropdown_bg rounded-box w-48 " >
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white hover:rounded-lg">
+                <a href="/currency_converter">Currency Converter</a>
+              </li>
+
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white ">
+                <a href="/weather">Weather App</a>
+              </li>
+
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white ">
+                <a href="/todo_list">To-Do List</a>
+              </li>
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white " >
+                <a href="/quotes">Quotes App</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
+        <nav>
+          <div class=" dropdown dropdown-hover ">
+            <div tabindex="0" class="cursor-pointer text-white hover:underline">
+              Games <i class="ri-arrow-down-s-fill animate-pulse "></i>
+            </div>
+            <ul tabindex="0" class="p-2 shadow menu dropdown-content  dropdown_bg rounded-box w-48">
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white hover:rounded-lg">
+                <a href="/quiz">Quiz App</a>
+              </li>
+
+              <li class="text-purple-900 hover:bg-purple-500 hover:text-white hover:rounded-lg">
+                <a href="/typing_speed_test">Typing Speed Test Game</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+
+        <nav>
+          <li class="cursor-pointer hover:underline">
+            <a class="text-white" aria-current="page" href="/about">About</a>
+          </li>
+        </nav>
+      </ul>
+    </nav>
+
+    </header>
+  </body>
+</html>
+
+<!-- source - https://www.youtube.com/watch?v=vafc43cIUz8 -->

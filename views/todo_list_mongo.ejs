@@ -1,0 +1,41 @@
+
+<%- include('header_links') -%>
+<link rel="stylesheet" href="css/todo_list_mongo.css">
+
+<title>To-Do List</title>
+</head>
+<body>
+
+  <div class="wrap">
+
+
+
+    <div class="container">
+      <h2>To Do List </h2>
+      <form class="add_form" action="/todo_list" method="post">
+        <input type="text" name="newItem" id="listitem" autocomplete="off" placeholder="Add item" />
+        <button id="add"  type="submit">Add</button>
+      </form>
+      <ul id="list">
+        <% for (var i = 0; i < newListItem.length; i++) { %>
+          <form  action="/delete" method="post">
+          <li>
+            <%= newListItem[i].name %>
+            <%  //Here, .name is taken from - const itemSchema = new mongoose.Schema({  name:String  }); %>
+          <%  //<input type="checkbox" class="close" value=" newListItem[i]._id %>
+                  <%//name="delete_checkbox" onChange="this.form.submit()"> %>
+              <button type="submit" class="close" name="delete_btn" value="<%= newListItem[i]._id %>" >
+                <i class="bi bi-x-circle"></i>
+              </button>
+          </li>
+          </form>
+      <%  } %>
+      </ul>
+
+    </div>
+</div>
+<%- include('script_links'); -%>
+<script src="js/todo_list_mongo.js" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+
+<%- include('header_links') -%>
+<link rel="stylesheet" type="text/css" href="css/quiz.css">
+<title>Quiz App</title>
+</head>
+  <body>
+    <%- include('preloader'); -%>
+    <%- include('navbar2'); -%>
+    <div class="bg-gradient-to-r from-purple-300 to-blue-200" id="quiz_page">
+    <div class="w-9/12 m-auto py-16 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg pb-8">
+    <div class="border-t border-gray-200 text-center quiz_box">
+    <header>
+    <div class="flex space-x-4 px-6 py-2" id="header_section">
+      <h1 class="text-2xl font-bold text-purple-400">Awesome Quiz Application</h1>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+    </div>
+    <div class="artboard phone time_line">
+      <progress value="10" max="100" class="progress progress-primary"></progress>
+    </div>
+    </header>
+    <section class="space-y-8 mx-8">
+    <div class="mt-12 font-bold text-4xl" id="question">question come here</div>
+        <div class="form-control flex flex-row space-x-4" id="options">
+          <input class="radio-lg answer " type="radio" name="answer" id="ansa ">
+          <label class="cursor-pointer  text-2xl" for="option_id1" id="label_id1">
+            <span class="label-text">option 1</span>
+          </label>
+        </div>
+
+        <div class="form-control flex flex-row space-x-4" id="options">
+          <input class="radio-lg answer " type="radio" name="answer" id="ansb ">
+          <label class="cursor-pointer  text-2xl" for="option_id2" id="label_id2">
+            <span class="label-text">option 2</span>
+          </label>
+        </div>
+
+        <div class="form-control flex flex-row space-x-4" id="options">
+          <input class="radio-lg answer " type="radio" name="answer" id="ansc ">
+          <label class="cursor-pointer  text-2xl" for="option_id3" id="label_id3">
+            <span class="label-text">option 3</span>
+          </label>
+        </div>
+
+        <div class="form-control flex flex-row space-x-4" id="options">
+          <input class="radio-lg answer " type="radio" name="answer" id="ansd ">
+          <label class="cursor-pointer  text-2xl" for="option_id4" id="label_id4">
+            <span class="label-text">option 4</span>
+          </label>
+        </div>
+      </section>
+    <button type="submit" id="quiz_btn" class="btn btn-primary text-2xl">
+          Next
+    </button>
+    <button type="submit" id="reload_btn" onclick="location.reload()" class="btn btn-outline btn-primary text-xl">
+      Play Again
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <%- include('script_links'); -%>
+    <script src="js/preloader.js" charset="utf-8"></script>
+    <script src="js/quiz.js" charset="utf-8"></script>
+  </body>
+</html>

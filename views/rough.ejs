@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <%- include('header_links'); -%>
+    <title></title>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+    <h1>This is rough page</h1>
+    <h2>My name is <%= name %> and date is <%= kindofday %>  </h2>
+    <h3>  </h3>
+    <ul>
+      <li>He came</li>
+      <li>He saw</li>
+      <li>He conqured</li>
+      <!-- <li> <%= newListItem %> </li> -->
+
+      <% for (var i = 0; i < newListItem.length; i++) { %>
+        <li> <%= newListItem[i] %> </li>
+    <%  } %>
+
+    <!-- //using forEach()
+  <%  newListItem.forEach %>
+  <%  ( function(each_item) %>
+  <%  { %>
+        <li> <%= each_item.name %> </li>
+  <%    } %>
+  <%  ); %> -->
+
+    </ul>
+
+    <form class="" action="/rough" method="post">
+      <input type="text" name="newItem">
+      <button type="submit" name="button">Add Item</button>
+    </form>
+
+    <%- include('script_links'); -%>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<%- include('header_links') -%>
+<meta name="keywords" content="Currency Converter,Weather app, Quotes app, Quiz app,Typing Speed Test. To-Do List app">
+<meta name="description" content="The AppAda consists of different type of apps like Currency Converter,
+                                  Weather app, Quotes app, Quiz app,Typing Speed Test. To-Do List app. ">
+<link rel="stylesheet" href="css/index.css">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<title>💻 AppAda Home Page </title>
+</head>
+    <body>
+    <%- include('preloader'); -%>
+    <%- include('navbar2'); -%>
+
+    <div class="hero min-h-screen" style="background-image: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd);">
+      <div class="flex-col hero-content lg:flex-row-reverse " id="home_block">
+        <img src="images/home_page/reshot-illustration-team-working-FLJ7MEYSNH.png"
+            class="lg:max-w-lg md:max-w-md sm:max-m-sm rounded-lg shadow-2xl ">
+        <div>
+          <p class="mb-5 text-5xl font-bold text-purple-600">
+              Welcome To
+          </p>
+          <p class="mb-5 text-5xl font-bold text-purple-600">
+              <i class="bi bi-app-indicator"></i>AppAda
+          </p>
+          <p class="mb-5">
+            <span class="text-purple-500 text-2xl font-semibold">Try hands-on</span>
+            <span id="anim" class="text-4xl font-bold italic"></span>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <%- include('footer');-%>
+    <%- include('script_links'); -%>
+    <script src="js/preloader.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+  </body>
+</html>
