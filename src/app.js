@@ -2,12 +2,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const dotenv = require("dotenv").config();
 // const n_ = require("lodash");
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5001;
 const ejs = require('ejs');
-const path = require('path'); 
+const path = require('path');
+const database = process.env.DATABASE;
 
 // let item = "";  //scope issue.
 let item_array = ["array1"];
@@ -22,8 +24,8 @@ app.set('views', views_path);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(public_path));
 
-// mongoose.connect('mongodb://localhost:27017/shree_app',
-mongoose.connect("mongodb+srv://admin-shree:shree12345@shreeprojectcluster.msns7.mongodb.net/shree_app" ,
+
+mongoose.connect(`${database}`,
 {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex : true, useFindAndModify: false})
 .then( ()=> console.log("connection to mongodb is successfull..."))
 .catch( (err)=> console.log(err));
@@ -219,7 +221,6 @@ app.get("/quiz", async (req, res) =>
                         await res.render("quiz3");
 
                     } catch (e) { console.log(`Error for quiz app is ` +e);  }
-                    // source - https://www.youtube.com/watch?v=3fbU4z7fPe4
                  }
         );
 
@@ -230,7 +231,6 @@ app.get("/typing_speed_test", async (req, res) =>
                                 await res.render("typing_speed_test");
 
                             } catch (e) { console.log(`Error for typing_speed_test app is ` +e);  }
-                            // source - https://www.youtube.com/watch?v=Hg80AjDNnJk
                   }
         );
 
@@ -243,7 +243,6 @@ app.get("/typing_speed_test", async (req, res) =>
                                         await res.render("about");
 
                                     } catch (e) { console.log(`Error for about is ` +e);  }
-                                    // source - https://merakiui.com/components/
                                  }
                         );
 
@@ -260,22 +259,6 @@ app.get("/404error", async (req, res) =>
         );
 
 
-   // app.get("*", async(req, res) =>
-   //              {
-   //                  try
-   //                  {
-   //                    await res.render("404error");
-   //
-   //                      var img_path = "images/404error/404 Page Not Found _Monochromatic.svg";
-   //                      await res.render("404error", {my_img_path : img_path});
-   //                       await res.status(404).redirect("/404error");
-   //                      await res.sendFile(__dirname + "../views/404error.ejs");
-   //                  } catch (e)
-   //                    {
-   //                      console.log(`Error for 404 error page is ` +e);
-   //                    }
-   //              }
-   //      );
 
 app.use(async (req,res,next) =>
               {
@@ -287,14 +270,10 @@ app.use(async (req,res,next) =>
               }
         );
 
-app.listen(process.env.PORT || 8000, () =>
+app.listen(port, () =>
                   {
                       console.log(`This is port no. ${port}`);
                   }
           );
 
-          // nodemon src/app.js -e js,ejs
-          // https://www.youtube.com/watch?v=R_AJkXWpDTs --currency
-          //cd F:/javaprog/javahomepractise/Web\ Development/ExpressJS\ Tutorial/expr_day_today_apps2
-          //cntrl+d and then cntrl+click for mutiple typing
-            //https://protected-depths-35023.herokuapp.com  -- https://bit.ly/appada-com
+// nodemon src/app.js -e js,ejs
